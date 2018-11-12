@@ -1,0 +1,211 @@
+div.relative {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+div.relative2 {
+    position: fixed;
+    top: 17px;
+    right: 125px;
+}
+div.relative3 {
+    position: fixed;
+    top: 17px;
+    right: 35px;
+}
+div.landingbox1 {
+    width: 720px;
+    padding-left: 35px;
+    padding-top: 120px;
+}
+div.landingbox2 {
+    width: 720px;
+    padding-left: 35px;
+}
+.landingtitle{
+    padding-left: 125px;
+    padding-top: 125px;
+}
+.subtempbox{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position: fixed;
+    right: 700px;
+    top: 150px;
+}
+.subhumidbox{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position:fixed;
+    right: 350px;
+    top: 150px;
+}
+.subcloudbox{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position:fixed;
+    right: 700px;
+    top: 475px;
+}
+.subwindbox{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position:fixed;
+    right: 350px;
+    top: 475px;
+}
+.subtempimg{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position: fixed;
+    right:565px;
+    top:200px;
+}
+.subhumidimg{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position: fixed;
+    right:200px;
+    top:200px;
+}
+.subcloudimg{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position: fixed;
+    right:565px;
+    top:550px;
+}
+.subwindimg{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position: fixed;
+    right:200px;
+    top:550px;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    top: 5px;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {/*
+    position: fixed;
+    position: relative;
+    display: inline-block;*/
+  position: -webkit-sticky;
+  position: absolute;
+  top: 0px;
+  padding-left: 1550px;
+  display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.table table-bordered table-hover table-condensed{
+    margin-top: 150px;
+}
+.footer
+{
+    position: relative;
+    bottom:5px;
+    width: 100%;
+    text-align: center;
+}
+
+.backgroundbar {
+
+    width: 100%;
+    z-index: -1;
+    border-style: double;
+}
+.bigimage
+{
+    position: relative;
+    left: 600px;
+}
+.explanation
+{
+    position: relative;
+    left: 660px;
+    width: 600px;
+}
+.comptempimg{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position: fixed;
+    left:180px;
+    top:55px;
+}
+.comphumidimg{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position: fixed;
+    right:130px;
+    top:55px;
+}
+.compcloudimg{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position: fixed;
+    left:180px;
+    top:410px;
+}
+.compwindimg{
+    display: -webkit-flex; 
+    -webkit-flex-wrap: wrap; 
+    display: flex;   
+    flex-wrap: wrap;
+    position: fixed;
+    right:130px;
+    top:410px;
+}
