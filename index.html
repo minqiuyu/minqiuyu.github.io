@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Week 12">
+    <meta name="author" content="Minqiu Yu">
+
+    <title>Weather Data Visualizations</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+<style>
+</style>
+<body>
+<!--<a href="#home">Home</a>-->
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Graphs</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="temperature.html">Temperature</a>
+    <a href="humidity.html">Humidity</a>
+    <a href="cloudiness.html">Cloudiness</a>
+    <a href="wind.html">Wind Speed</a>
+  </div>
+</div>
+
+<img class="backgroundbar" src="backgroundbar.png" width = "2000" height = "55" alt="Ignore">
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<div class="relative">
+<h3><a href="index.html">Home</a></h3>
+</div></p>
+<div class="relative2">
+<h6><a href="comparison.html">Comparisons</a></h6>
+</div></p>
+<div class="relative3">
+<h6><a href="data.html">Data</a></h6>
+</div></p>
+<!--<img src="outputdata/lat_vs_max_temp.png" width="720" height="384" alt="Latitude and Temperature">-->
+<a href="temperature.html">
+<img class="subtempimg" src="outputdata/lat_vs_max_temp.png" width="360" height="192" alt="Latitude and Temperature">
+</a>
+<a href="humidity.html">
+<img class="subhumidimg" src="outputdata/lat_vs_humidity.png" width="360" height="192" alt="Latitude and Humidity">
+</a>
+<a href="cloudiness.html">
+<img class="subcloudimg" src="outputdata/lat_vs_cloudiness.png" width="360" height="192" alt="Latitude and Cloudiness">
+</a>
+<a href="wind.html">
+<img class="subwindimg" src="outputdata/lat_vs_wind_speed.png" width="360" height="192" alt="Latitude and Wind Speed">
+</a>
+<h2 class ="landingtitle">Welcome to Latitude comparisons</h2>
+<div class="landingbox1">This is a visualization of a previously conducted project done to compare various cities across the world, compiled randomly through the Citipy database. The cities gathered (numbering at roughly 500) then had their associated weather data collected using the OpenWeatherMap API, and graphs were created with Python's Matplotlib module in order to visualize how their latitudes related to four other aspects of their climate: Maximum temperature, humidity, cloud cover, and wind speed. This website provides visualizations from Matplotlib of all four comparisons, and additionally lists the data used in comparisons.</div>
+<br>
+<div class="landingbox2">All measurements were taken in late September of 2018. Click any of the boxes to the left for a detailed analysis of a particular chart.</div>
+<img src="cloud_png16.png" width = "500" height = "255" alt="Ignore">
+<h6 class="subtempbox">Temperature</h6>
+<h6 class="subhumidbox">Humidity</h6>
+<h6 class="subcloudbox">Cloud Cover</h6>
+<h6 class="subwindbox">Wind Speed</h6>
+	<h3 class="footer"><a href="https://github.com/minqiuyu">Github</a></h3>
+		<div class="row justify-content-center">
+		</div>
+	</div>
+  </body>
+
+</html>

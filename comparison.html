@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Week 12">
+    <meta name="author" content="Minqiu Yu">
+
+    <title>Weather Data Visualizations</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+<body>
+<!--<a href="#home">Home</a>-->
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Graphs</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="temperature.html">Temperature</a>
+    <a href="humidity.html">Humidity</a>
+    <a href="cloudiness.html">Cloudiness</a>
+    <a href="wind.html">Wind Speed</a>
+  </div>
+</div>
+<img class="backgroundbar" src="backgroundbar.png" width = "2000" height = "55" alt="Ignore">
+<div class="relative">
+<h3><a href="index.html">Home</a></h3>
+</div></p>
+<div class="relative2">
+<h6><a href="comparison.html">Comparisons</a></h5>
+</div></p>
+<div class="relative3">
+<h6><a href="data.html">Data</a></h5>
+</div></p>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+<a href="temperature.html">
+<img class="comptempimg" src="outputdata/lat_vs_max_temp.png" width="720" height="384" alt="Latitude and Temperature">
+</a>
+<a href="humidity.html">
+<img class="comphumidimg" src="outputdata/lat_vs_humidity.png" width="720" height="384" alt="Latitude and Humidity">
+</a>
+<a href="cloudiness.html">
+<img class="compcloudimg" src="outputdata/lat_vs_cloudiness.png" width="720" height="384" alt="Latitude and Cloudiness">
+</a>
+<a href="wind.html">
+<img class="compwindimg" src="outputdata/lat_vs_wind_speed.png" width="720" height="384" alt="Latitude and Wind Speed">
+</a>
+  <h3 class="footer"><a href="https://github.com/minqiuyu">Github</a></h3>
+    <div class="row justify-content-center">
+    </div>
+  </div>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Week 12">
+    <meta name="author" content="Minqiu Yu">
+
+    <title>Latitude versus Humidity</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body id="page-top">
+
+
+    <!-- Navigation -->
+<body>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Graphs</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="temperature.html">Temperature</a>
+    <a href="humidity.html">Humidity</a>
+    <a href="cloudiness.html">Cloudiness</a>
+    <a href="wind.html">Wind Speed</a>
+  </div>
+</div>
+<img class="backgroundbar" src="backgroundbar.png" width = "2000" height = "55" alt="Ignore">
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<div class="relative">
+<h3><a href="index.html">Latitudes</a></h3>
+</div></p>
+<div class="relative2">
+<h6><a href="comparison.html">Comparisons</a></h5>
+</div></p>
+<div class="relative3">
+<h6><a href="data.html">Data</a></h5>
+</div></p>
+</div></p>
+    <header class="masthead text-center text-black d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Latitude and Humidity</strong>
+            </h1>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </header>
+<img class = "bigimage" src="outputdata/lat_vs_humidity.png" width="720" height="384" alt="Latitude and Humidity">
+<p class="explanation">Humidity is consistently high along the equator, which is populated with Earth's rain forests. Certain positive latitudes close to the equator are also very high; as a humidity of 100% usually correlates to rain, this can be attributed to the high number of hurricanes affecting the Northern hemisphere at the time of data sampling.</p>
+        <h3 class="footer"><a href="https://github.com/minqiuyu">Github</a></h3>
+        <div class="row justify-content-center">
+        </div>
+    </div>
